@@ -1,0 +1,113 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Formulario */
+main {
+    max-width: 600px;
+    margin: 7rem auto;
+    padding: 1rem;
+    background:rgb(174 174 174 / 59%);
+    border-radius: 8px;
+}
+
+.config-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    color: aliceblue;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input, select, button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: aliceblue;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(33 32 32 / 59%);
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Alerta emergente */
+.alert {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #FFC107;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+}
+
+.alert.hidden {
+    display: none;
+}
+
+
+#stock h1{
+    font-size: 50px;
+    margin-top: 92px;
+    color: white;
+    text-shadow: 7px -1px 0 #1c51a0, 1px -1px 0 #1c51a0, -1px 1px 0 #1c51a0, 3px 5px 0 #1c51a0;
+    margin-left: 660px;
+    letter-spacing: 5px;
+    padding: 18px;  
+}
+
+body {
+    font-family: "Metal Mania", system-ui;
+    background-image: url('fondoMotoRacer.png'); 
+    background-size: cover;
+    background-position: center;
+    
+}
+body::before {
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    background: black;
+    opacity: 0.6;
+}

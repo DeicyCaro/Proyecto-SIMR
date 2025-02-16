@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+  
+    font-family: "Metal Mania", system-ui;
+
+    background-image: url('/imagenes/fondo.png');
+    background-size: cover; /* This will contain the image on top of the gradient */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+
+    z-index: -1;
+    background: linear-gradient(0deg, rgb(59, 100, 134 , 0.8), rgb(59, 100, 134 , 0.8));
+    
+}
+
+
+.inicio-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(80vh - 50px);
+    margin-left: 150px;
+    filter: drop-shadow(0 0 0.5rem rgb(255, 255, 255));
+}
+.inicio-img{
+    max-width: 45%;
+    height: 426px;
+}
+h2{
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    margin-top: -78px;
+    margin-left: 112px;
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000,  
+    -1px 1px 0 #000,  
+    3px 3px 0 #000;  /* Cambia el color y tamaño del contorno según necesites */
+}
